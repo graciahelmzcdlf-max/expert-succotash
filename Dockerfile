@@ -1,7 +1,7 @@
-FROM gogost/gost:latest
+FROM vimagick/dante-server:latest
 
-COPY gost.json /etc/gost/config.json
+ENV PORT=8080
+ENV USER=frnre231frea
+ENV PASSWORD=degers153
 
-EXPOSE 8080 8081
-
-ENTRYPOINT ["gost", "-C", "/etc/gost/config.json"]
+RUN apk add --no-cache curl
