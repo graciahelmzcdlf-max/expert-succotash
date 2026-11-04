@@ -1,0 +1,32 @@
+{
+  "services": [
+    {
+      "name": "service_http",
+      "addr": "0.0.0.0:8080",
+      "handler": {
+        "type": "auto",
+        "auth": {
+          "username": "frnre231frea",
+          "password": "degers153"
+        }
+      },
+      "listener": {
+        "type": "tcp"
+      }
+    },
+    {
+      "name": "service_socks",
+      "addr": "0.0.0.0:8081",
+      "handler": {
+        "type": "socks5",
+        "auth": {
+          "username": "frnre231frea",
+          "password": "degers153"
+        }
+      },
+      "listener": {
+        "type": "tcp"
+      }
+    }
+  ]
+}
